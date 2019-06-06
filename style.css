@@ -369,6 +369,7 @@ button:focus {
 	color: #fff;
 	font-size: 50px;
 	margin-bottom: 20px;
+	font-weight: 600;
 }
 
 .mu-hero-left p {
@@ -378,14 +379,16 @@ button:focus {
 
 .mu-hero-left .mu-primary-btn {
 	margin-top: 20px;
-	background-color: #fff;
 	font-weight: 600;
 }
 
-.mu-hero-left span {
-	display: block;
+.mu-hero-left .smallprint {
 	margin-top: 10px;
-	color: #f8f8f8;
+}
+
+.mu-hero-left .smallprint a {
+	text-decoration: underline;
+	color: #fff
 }
 
 
@@ -394,7 +397,6 @@ button:focus {
 /*--------------------*/
 
 #mu-counter {
-	background-color: #fff;
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -439,7 +441,6 @@ button:focus {
 	display: inline-block;
 	padding-bottom: 0;
 	margin-top: -60px;
-	background: #fff;
 }
 
 .counter-value {
@@ -450,7 +451,7 @@ button:focus {
 }
 
 .mu-counter-name {
-	color: #333;
+	color: #fff;
 }
 
 
@@ -481,6 +482,10 @@ button:focus {
 	width: 100%;
 }
 
+#mu-book-overview .mu-heading-area p {
+	text-align:justify;
+}
+
 .mu-heading-title {
 	color: #1c1b1b;
 	margin-bottom: 15px;
@@ -498,11 +503,81 @@ button:focus {
 .mu-book-overview-content{
 	display: inline;
 	float: left;
+	margin-top: 40px;
+	width: 100%;
+	text-align: center;
+}
+.mu-book-overview-content li {
+	padding: 7px 0;
+	list-style: none;
+}
+
+.mu-book-overview-content li:before {
+    content: '•';
+    padding-right: 15px;
+	font-size: 1.5em;
+	position: relative;
+	top: 0.125em;
+}
+
+.mu-book-overview-content li:after {
+    content: '•';
+    padding-left: 15px;
+	font-size: 1.5em;
+	position: relative;
+	top: 0.125em;
+}
+
+
+/*--------------------*/
+/* CHAPTERS */
+/*--------------------*/
+
+
+#mu-chapters {
+	background-color: #f8f8f8;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-chapters-area {
+	display: inline;
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+}
+
+.mu-heading-area {
+	display: inline;
+	float: left;
+	text-align: center;
+	padding: 0 10%;
+	width: 100%;
+}
+
+.mu-heading-title {
+	color: #1c1b1b;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.mu-header-dot {
+	border-radius: 0;
+	height: 3px;
+	width: 100px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.mu-chapters-content {
+	display: inline;
+	float: left;
 	margin-top: 70px;
 	width: 100%;
 }
 
-.mu-book-overview-single {
+.mu-chapters-single {
 	display: inline;
 	float: left;
 	text-align: center;
@@ -512,14 +587,14 @@ button:focus {
 	margin: 10px 0 15px;
 }
 
-.mu-book-overview-icon-box {
+.mu-chapters-icon-box {
 	font-size: 25px;
 	padding: 5px 12px;
 	margin-bottom: 30px;
 	display: inline-block;
 }
 
-.mu-book-overview-single h4{
+.mu-chapters-single h4{
 	margin-bottom: 20px;
 }
 
@@ -588,6 +663,26 @@ button:focus {
 	display: inline;
 	float: left;
 	width: 100%;
+}
+
+#mu-author {
+	background-image: url(assets/images/video-review-bg.jpeg);
+	background-attachment: fixed;
+	background-size: cover;
+	display: inline;
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+#mu-author:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.84;
 }
 
 .mu-author-area {
@@ -752,6 +847,66 @@ button:focus {
 .mu-popular-price-tag .mu-order-btn {
 	background-color: #fff;
 	border: 1px solid #fff;
+}
+
+/*--------------------*/
+/* CODE SAMPLES */
+/*--------------------*/
+
+#mu-notebooks {
+	background-image: url("assets/images/notebook.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: inline;
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+#mu-notebooks::before {
+	background: rgba(0,0,0,0.95);
+	bottom: 0;
+	content: '';
+	left: 0;
+	top: 0;
+	right: 0;
+	position: absolute;
+	opacity: 0.9;
+	color: #fff;
+}
+
+.mu-notebooks-area {
+	display: inline;
+	float: left;
+	padding: 150px 0 175px;
+	width: 100%;
+}
+
+.mu-notebooks-area h2 {
+	color: #fff;
+	text-align: center;
+}
+
+.mu-notebooks-image i {
+	font-size: 150px;
+	padding: 38px 15px;
+	margin-bottom: 0px;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.mu-notebooks-block {
+	display: inline;
+	float: left;
+	margin-top: 60px;
+	width: 100%;
+	color: #fff;
+}
+
+.mu-notebooks-block p {
+	text-align: justify;
 }
 
 
